@@ -31,6 +31,8 @@ class TestDataStructures:
     def test_get_names(self):
         '''contains function get_names() that retrieves names from list of foods.'''
         assert(get_names(TestDataStructures.SPICY_FOODS) == ['Green Curry', 'Buffalo Wings', 'Mapo Tofu'])
+def get_spiciest_foods(spicy_foods):
+    return [food for food in spicy_foods if food["heat_level"] > 5]
 
     def test_get_spiciest_foods(self):
         '''contains function get_spiciest_foods() that returns foods with a heat_level over 5.'''
